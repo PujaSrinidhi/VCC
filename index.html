@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Microservice</title>
+    <script>
+        function fetchData() {
+            fetch('/api/data')
+            .then(response => response.json())
+            .then(data => alert(data.message))
+            .catch(error => console.error('Error:', error));
+        }
+    </script>
+</head>
+<body>
+    <h1>Welcome to Flask Microservice</h1>
+    <button onclick="fetchData()">Fetch API Data</button>
+</body>
+</html>
