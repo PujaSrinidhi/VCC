@@ -148,36 +148,6 @@ The following is a summary of the key files in the repository:
 
 ---
 
-## Architecture Diagram
-
-Here’s a basic flow:
-
-1. **Local VM with Node Exporter**:  
-   Collects system resource metrics (CPU, memory, disk).
-   
-2. **Grafana**:  
-   Visualizes the metrics in real-time via dashboards.
-   
-3. **Alerts in Grafana**:  
-   Triggers alerts when resource usage exceeds 75% (e.g., CPU, memory).
-
-4. **Auto-Scaling**:  
-   Based on alerts, auto-scaling policies in AWS/GCP/Azure automatically scale resources up when needed.
-
----
-
-## Recording Video Demo
-
-Create a **screen recording** that demonstrates the following:
-
-1. Setting up **Grafana** on the VM.
-2. Adding **Node Exporter** and configuring it to send metrics to **Prometheus**.
-3. Creating **Grafana dashboards** for monitoring system resources.
-4. Setting up **alerts** for when system usage exceeds 75%.
-5. **Auto-scaling** action in a cloud provider (if applicable) based on Grafana alerts.
-
----
-
 ## Conclusion
 
 This project demonstrates how to monitor and manage the system resources of a local VM using **Grafana** and **Node Exporter**. By setting up alerts for resource usage and integrating with cloud auto-scaling, the system can automatically scale to handle increased load when necessary.
