@@ -1,0 +1,50 @@
+
+{
+  "annotations": [],
+  "panels": [
+    {
+      "type": "graph",
+      "title": "CPU Usage",
+      "targets": [
+        {
+          "expr": "avg(rate(node_cpu_seconds_total{mode="idle"}[5m])) by (instance)",
+          "format": "time_series",
+          "interval": "",
+          "intervalFactor": 2,
+          "legendFormat": "{{instance}}",
+          "refId": "A"
+        }
+      ],
+      "gridPos": {
+        "h": 9,
+        "w": 24,
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "type": "graph",
+      "title": "Memory Usage",
+      "targets": [
+        {
+          "expr": "(node_memory_MemTotal_bytes - node_memory_MemFree_bytes) / node_memory_MemTotal_bytes * 100",
+          "format": "time_series",
+          "interval": "",
+          "intervalFactor": 2,
+          "legendFormat": "Memory Usage",
+          "refId": "B"
+        }
+      ],
+      "gridPos": {
+        "h": 9,
+        "w": 24,
+        "x": 0,
+        "y": 9
+      }
+    }
+  ],
+  "schemaVersion": 26,
+  "version": 1,
+  "links": [],
+  "timezone": "browser"
+}
