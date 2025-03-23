@@ -150,7 +150,7 @@ The following is a summary of the key files in the repository:
 
 Below is the architecture diagram for the project:
 
-![Architecture Design Diagram](./images/architecture_design_diagram.png)
+![Architecture Design Diagram](https://github.com/PujaSrinidhi/VCC/blob/main/arch_design.png)
 
 The diagram illustrates the flow from local VM resource monitoring to cloud-based auto-scaling.
 
